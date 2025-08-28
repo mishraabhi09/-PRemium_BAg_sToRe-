@@ -1,0 +1,36 @@
+/ route
+
+username 
+email
+password
+
+/login route
+
+email
+password
+
+login ->> main page
+
+
+
+Usermodel-->>
+
+fullname -> string
+email -> string
+password -> string
+cart -> Array
+isAdmin -> boolean
+picture -> string
+
+
+productModel-->>
+
+image
+price 
+name
+bgcolor
+discount
+textcolor
+panelcolor
+
+
