@@ -7,7 +7,10 @@ const config = require("config");
 mongoose
     .connect(`${config.get
         ("MONGO_URI")}/
-         PRemium_BAg_stoRE}`)
+         PRemium_BAg_stoRE}`, {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+    })
     .then(() => {
         // console.log("Db is connected!!");
         debug("Server started...")
